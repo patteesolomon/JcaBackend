@@ -4,9 +4,9 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const cors = require('cors');
 const db = mongoose.connection;
-// const Todos = require('./models/todos.js');
-// const todosData = require('./utilities/data');
-// const todosController = require("./controllers/todos.js");
+const Cards = require('./models/card.js');
+const cardsData = require('./utilities/data');
+const cardsController = require("./controllers/cards.js");
 
 // Environment Variables
 const app = express();
@@ -30,14 +30,16 @@ app.use(cors());
 
 // Routes
 
-// app.use('/todos', todosController);
+app.use('/cards', cardsController);
 
-// // Seeding the db
-// app.get('/seed', async (req, res) => {
-//   await Todos.deleteMany({});
-//   await Todos.insertMany(todosData);
-//   res.send('done!');
-// });
+// Seeding the db
+app.get('/seed', async (req, res) => {
+  await Cards.deleteMany({});
+  await Cards.insertMany(cardsData);
+  res.send('done!');
+});
+
+
 
 app.get('/', (req, res)=>{
     res.send('HI!');

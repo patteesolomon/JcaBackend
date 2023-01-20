@@ -1,7 +1,6 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,9 +13,19 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "Express": "^3.0.1",
     "method-override": "^3.0.0",
     "mongoose": "^6.8.4",
-    "nodemon": "^2.0.20"
-  }
+    "nodemon": "^2.0.20",
+    "pexels": "^1.4.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patteesolomon/JcaBackend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/patteesolomon/JcaBackend/issues"
+  },
+  "homepage": "https://github.com/patteesolomon/JcaBackend#readme",
+  "description": ""
 }
