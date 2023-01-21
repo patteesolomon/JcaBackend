@@ -3,5 +3,5 @@
 const cardData = [
     {title: 'Software Engineer',
         description: 'an Engineer that creates different form of software.',
-        Image:('','500px','500px')}
+        Image:''
 ];
