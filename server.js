@@ -1,4 +1,5 @@
 // Dependencies;
+// change all this for user data only
 const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();

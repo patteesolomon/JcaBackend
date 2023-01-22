@@ -18,7 +18,6 @@
     "nodemon": "^2.0.20",
     "pexels": "^1.4.0"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/patteesolomon/JcaBackend.git"
