@@ -5,9 +5,9 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const cors = require('cors');
 const db = mongoose.connection;
-const Cards = require('./models/card.js');
-const cardsData = require('./utilities/data');
-const cardsController = require("./controllers/cards.js");
+const Users = require('./models/user.js');
+const UsersData = require('./utilities/data');
+const UsersController = require("./controllers/users.js");
 
 // Environment Variables
 const app = express();
@@ -31,12 +31,12 @@ app.use(cors({ origin: '*' }));
 
 // Routes
 
-app.use('/cards', cardsController);
+app.use('/users', UsersController);
 
 // Seeding the db
 app.get('/seed', async (req, res) => {
-  await Cards.deleteMany({});
-  await Cards.insertMany(cardsData);
+  await Users.deleteMany({});
+  await Users.insertMany(UsersData);
   res.send('done!');
 });
 
