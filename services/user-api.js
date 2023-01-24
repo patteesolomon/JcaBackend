@@ -4,7 +4,7 @@ import axios from "axios";
 // .then(response => response.json())
 // .then(data => console.log(data))
 // SHOW ALL 
-const baseURL = 'http://localhost:3001/user';
+const baseURL = 'https://jcausersbackend.onrender.com';
 // port to our express app 
 // defining it here makes things easier
 // the slash is for everything comming from the default route
