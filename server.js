@@ -30,7 +30,6 @@ app.use(express.static('public')); // we need to tell express to use the public 
 app.use(cors({ origin: '*' }));
 
 // Routes
-
 app.use('/users', UsersController);
 
 // Seeding the db
@@ -39,8 +38,6 @@ app.get('/seed', async (req, res) => {
   await Users.insertMany(UsersData);
   res.send('done!');
 });
-
-
 
 app.get('/', (req, res)=>{
     res.send('HI!');

@@ -9,25 +9,29 @@ const baseURL = 'https://jcausersbackend.onrender.com';
 // defining it here makes things easier
 // the slash is for everything comming from the default route
 
-export const getUsers = () =>{
+export const getUsers = () => 
+{
     const URL = baseURL;// base URL
     const response = axios.get(URL);
     return response;
 };
 
-export const getUser = (user) => {
+export const getUser = (user) => 
+{
     const URL = `${baseURL}/${id}`;
     const response = axios.get(URL);
     return response;
 };
 
-export const editUser = (id, updatedUser) => {
+export const editUser = (id, updatedUser) => 
+{
     const URL = `${baseURL}/${id}`;
     const response = axios.put(URL, updatedUser);
     return response;
 };
 
-export const createUser = (User) => {
+export const createUser = (User) => 
+{
     const URL = baseURL;
     const response = axios.post(URL, User);
     return response;

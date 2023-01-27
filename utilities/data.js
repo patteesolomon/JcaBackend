@@ -6,3 +6,5 @@ const userData = [
       cards: ['Software_Engineer', 'Artist']
     }
 ];
+
+module.exports = userData;
